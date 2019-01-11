@@ -1,0 +1,12 @@
+{
+    "name": "maus/doctrine.com",
+    "type": "doctrine/orm",
+    "require": {
+        "doctrine/orm": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
