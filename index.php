@@ -6,15 +6,10 @@
 require __DIR__.'/boot.php';
 
 
-
-
-
-
-
 // Пример DQL
 $query = $entityManager->createQuery('SELECT p.id FROM Person p');
 $data = $query->execute();
-
+//-------------------------
 
 
 
@@ -29,11 +24,11 @@ $entityManager->persist($department);
 $entityManager->persist($person);
 
 $entityManager->flush();
+//-------------------------
 
 
 
-/*
-// Поиск/изменение записи
+// ---------------- Поиск/изменение записи
 $repository = $entityManager->getRepository(\Models\Person::class);
 
 $person = $repository->find(2);
@@ -42,10 +37,11 @@ $person = $repository->find(2);
 $person->setAge(25);
 $entityManager->flush();
 
-$person2 = $entityManager->find(\Models\Person::class, 2);*/
+$person2 = $entityManager->find(\Models\Person::class, 2);
+//-------------------------------
 
-/*
-// Создание новой записи
+
+// ---------------- Создание новой записи
 $person = new \Models\Person();
 
 $person->setName('Петров')->setAge(19);
@@ -55,4 +51,4 @@ $entityManager->persist($person); // возьми под свой контрол
 $entityManager->flush(); // все изменения сбрасывает в базу данных
 
 
-echo $person->getId();*/
+echo $person->getId();

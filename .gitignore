@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Maus_theme template
+/node_modules
+/vendor
+/.idea
+/.vscode
+/.vagrant
+.env
+.phpunit.result.cache
